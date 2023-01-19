@@ -1,0 +1,45 @@
+<html>
+ <head> 
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <title>我想对你说</title>  
+  <style>
+  body{
+    color:white;
+    background-color:pink;
+    
+    
+    
+    }
+    p::after{
+      
+      content:"❤️"
+      
+      }
+
+
+</style>
+ </head> 
+ <body>
+ <p></p>
+  <audio autoplay="autoplay" loop>  
+    <source src="music/bx.mp3" type="audio/mpeg">
+  </audio>
+  <script>
+
+let p = document.querySelector("p")
+let str = "最遥远的距离不是生与死，而是我站在你面前，你却不知道我爱你！"
+
+let i = 0
+
+setInterval(function(){
+      if(i >= str.length){
+         return
+      }
+      p.innerText += str[i]
+    i += 1
+    },300)
+
+
+</script>
+ </body>
+</html>
